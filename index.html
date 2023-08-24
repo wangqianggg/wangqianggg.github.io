@@ -61,10 +61,10 @@
         
           <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wangqianggg.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wangqianggg.github.io"></form>
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@
     <article id="post-buildblog1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/08/24/buildblog1/" class="article-date">
-  <time class="dt-published" datetime="2023-08-24T01:58:00.000Z" itemprop="datePublished">2023-08-24</time>
+  <time class="dt-published" datetime="2023-08-24T06:11:00.000Z" itemprop="datePublished">2023-08-24</time>
 </a>
     
   </div>
@@ -118,11 +118,11 @@
 <p>初始化成功后在本地部署：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g		<span class="comment">#静态部署</span></span><br><span class="line">hexo s		<span class="comment">#在本地部署</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/image-20230823200600306.png"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241358083.png" alt="image-20230823200600306"></p>
 <p>访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> ，如下则表示初始化博客成功：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308232021210.png" alt="image-20230823202119922"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241359318.png" alt="202308232021210"></p>
 <p>按下 <kbd>Ctrl</kbd>+<kbd>C</kbd> 结束本地部署；<br>接下来将Hexo部署到GitHub上；<br>首先在GitHub上面新建一个public仓库，仓库命名为：”用户名xxx.github.io”：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308232038225.png" alt="image-20230823203801145"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241359964.png" alt="202308232038225"></p>
 <p>找到文件夹中的配置文件_config.yml，在文件最下面的# Deployment中做如下修改：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/wangqianggg/wangqianggg.github.io.git</span>	<span class="comment">#仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -133,29 +133,29 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		<span class="comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></span><br><span class="line">hexo g</span><br><span class="line">hexo d			<span class="comment">#自动生成网站静态文件，并部署到设定的仓库</span></span><br></pre></td></tr></table></figure>
 
 <p>访问<a href="https://wangqianggg.github.io/">https://xxx.github.io</a> 可以打开个人博客网页：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308232056055.png" alt="image-20230823205618924"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241400198.png" alt="202308232056055"></p>
 <p>至此，个人博客网站搭建完成。</p>
 <h3 id="04-编辑器与图床工具"><a href="#04-编辑器与图床工具" class="headerlink" title="04 编辑器与图床工具"></a>04 编辑器与图床工具</h3><p><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>是一款非常好用的markdown文本编辑器。</p>
 <p><a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/">PicGo</a>图床工具的一些设置：<br>首先是下载地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a><br>下拉找到当前的一个稳定版本(2.3.1)进行下载：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240851398.png" alt="image-20230824085133306"></p>
+<p><img src="D:/BLOG/SnipastePic/202308240851398.png" alt="202308240851398"></p>
 <p>安装后运行，注意，当前版本PicGo不会自动弹窗出来，在小菜单栏中再次点击方可打开PicGo界面：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240854875.png" alt="image-20230824085440827"></p>
-<p>安装好PicGo之后，需要到GitHub仓库中进行一些操作：<br>首先在之前创建好的仓库中新建一个文件夹&#x2F;img来作为保存图片的地址：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240901433.png" alt="image-20230824090151370"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241401044.png" alt="202308240854875"></p>
+<p>安装好PicGo之后，需要到GitHub中新建一个仓库来保存图片：</p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241403418.png" alt="Snipaste_2023-08-24_12-13-56"></p>
 <p>其次需要生成一个token来供PicGo使用；<br>在GitHub中点击头像–&gt;Setting&#x2F;Developer Settings&#x2F;Personal access tokens&#x2F;Token(classic)–&gt;点击右上角的Generate new token:</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240912861.png" alt="image-20230824091255798"></p>
-<p>将生成好的token复制下来，回到PicGo，找到图床设置–&gt;GitHub：<br>仓库名：账户名&#x2F;仓库名<br>分支：master或者main<br>设定token：刚刚复制的token<br>设定存储路径：&#x2F;img</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240916847.png" alt="image-20230824091637797"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241404216.png" alt="202308240912861"></p>
+<p>将生成好的token复制下来，回到PicGo，找到图床设置–&gt;GitHub：<br>仓库名：账户名&#x2F;仓库名<br>分支：master或者main<br>设定token：刚刚复制的token<br>设定存储路径：PicGo&#x2F;</p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241406268.png" alt="image-20230824140628213"></p>
 <p>点击确定后，图床配置完成，可以在上传区上传图片到仓库了；<br>接下来对Typora进行一些设置，在Typora中使用<kbd>Ctrl</kbd>+<kbd>,</kbd>进入偏好设置：</p>
-<p><img src="https://raw.githubusercontent.com/wangqianggg/wangqianggg.github.io/master/img/202308240949001.png" alt="202308240926431"></p>
+<p><img src="https://raw.githubusercontent.com/wangqianggg/Images/main/PicGo/202308241407363.png" alt="202308240949001"></p>
 <p>最后点击验证图片上传，上传成功则表示Typora设置完成，此时，在Typora中添加图片后，便可以通过PicGo直接上传到GitHub上；</p>
 <h3 id="05-截图工具"><a href="#05-截图工具" class="headerlink" title="05 截图工具"></a>05 截图工具</h3><p>选择使用<a target="_blank" rel="noopener" href="https://www.snipaste.com/">Snipaste</a></p>
-<h3 id="06"><a href="#06" class="headerlink" title="06"></a>06</h3><p>🆗<br>至此完成了个人博客的搭建，以及相关工具的配置，可以开始使用我们的个人博客进行记录了！<br>😋😋😋</p>
+<h3 id="06-👻👻👻"><a href="#06-👻👻👻" class="headerlink" title="06 👻👻👻"></a>06 👻👻👻</h3><p>🆗<br>至此完成了个人博客的搭建，以及相关工具的配置，可以开始使用我们的个人博客进行记录了！<br>😋😋😋</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wangqianggg.github.io/2023/08/24/buildblog1/" data-id="cllon204v0001a8tkh4ymhpcc" data-title="buildblog1" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://wangqianggg.github.io/2023/08/24/buildblog1/" data-id="cllon204v0001a8tkh4ymhpcc" data-title="buildblog1" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -206,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wangqianggg.github.io/2023/08/23/hello-world/" data-id="cllon204p0000a8tk0c1mfslu" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://wangqianggg.github.io/2023/08/23/hello-world/" data-id="cllon204p0000a8tk0c1mfslu" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -234,7 +234,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
     </div>
@@ -244,7 +244,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
